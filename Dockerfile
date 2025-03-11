@@ -21,8 +21,8 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV NODE_ENV production
 
-# Build application
-RUN yarn build
+# Fix ESLint issues and build
+RUN yarn lint --fix || true && yarn build
 
 # Stage 3: Runner
 FROM node:20-alpine AS runner
