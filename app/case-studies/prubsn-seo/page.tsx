@@ -11,7 +11,7 @@ const SEOCaseStudy = () => {
               SEO Improvement Case Study
             </h1>
             <p className="text-xl text-red-100">
-              A comprehensive analysis of PruBSN.com.my's SEO status and actionable recommendations
+              A comprehensive analysis of PruBSN.com.my&apos;s SEO status and actionable recommendations
             </p>
           </div>
         </div>
@@ -22,8 +22,8 @@ const SEOCaseStudy = () => {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Executive Summary</h2>
           <p className="text-gray-600">
-            During our SEO audit of PruBSN.com.my, we identified several critical issues affecting the website's search engine optimization and user experience. 
-            This case study outlines these issues and provides actionable solutions to improve the website's SEO performance.
+            During our SEO audit of PruBSN.com.my, we identified several critical issues affecting the website&apos;s search engine optimization and user experience. 
+            This case study outlines these issues and provides actionable solutions to improve the website&apos;s SEO performance.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const SEOCaseStudy = () => {
               ></div>
             </div>
             <p className="text-sm text-gray-600">
-              The website has a good overall health score, but there's room for improvement in specific areas.
+              The website has a good overall health score, but there&apos;s room for improvement in specific areas.
             </p>
           </div>
 
@@ -150,7 +150,7 @@ const SEOCaseStudy = () => {
                 <span className="text-3xl font-bold text-[#ed1b2e]">2,700+</span>
               </div>
               <p className="text-gray-600 mb-4">
-                Based on analysis of 4 competitors, we've identified over 2,700 relevant keywords that PruBSN could target to improve search visibility.
+                Based on analysis of 4 competitors, we&apos;ve identified over 2,700 relevant keywords that PruBSN could target to improve search visibility.
               </p>
               <div className="flex items-center text-sm text-[#ed1b2e]">
                 <svg className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

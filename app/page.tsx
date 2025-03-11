@@ -12,7 +12,7 @@ const Home = () => {
               Digital Excellence Initiative
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Enhancing PruBSN's digital presence through strategic improvements and best practices
+              Enhancing PruBSN&apos;s digital presence through strategic improvements and best practices
             </p>
             <div className="mt-8">
               <Link
@@ -56,7 +56,7 @@ const Home = () => {
                 Important SEO Findings
               </h2>
               <p className="mt-2 text-amber-700 leading-relaxed">
-                Our analysis has identified several critical SEO improvements that could significantly enhance PruBSN's digital presence and user experience.
+                Our analysis has identified several critical SEO improvements that could significantly enhance PruBSN&apos;s digital presence and user experience.
               </p>
             </div>
           </div>
