@@ -230,25 +230,48 @@ const SEOCaseStudy = () => {
         {/* Key Issues Grid */}
         <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 mb-16">
           {/* Issue 1: Multiple H1 Tags */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start">
+          <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#ed1b2e]/20 border border-transparent">
+            <div className="p-8">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-[#ed1b2e]">
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-red-100 text-[#ed1b2e] group-hover:bg-[#ed1b2e] group-hover:text-white transition-colors duration-300">
+                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                 </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">1. Multiple H1 Tags Issue</h3>
-                  <p className="mt-2 text-gray-600">The homepage contains multiple H1 tags, which goes against SEO best practices and can confuse search engines about the main topic of the page.</p>
-                  <div className="mt-4 bg-gray-50 rounded-md p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Solution:</h4>
-                    <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Keep only one H1 tag per page that clearly describes the main topic</li>
-                      <li>Convert other H1 tags to appropriate heading levels (H2-H6)</li>
-                      <li>Maintain proper heading hierarchy throughout the page</li>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-xl font-bold text-gray-900">Multiple H1 Tags Issue</h3>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Critical</span>
+                  </div>
+                  <p className="mt-3 text-gray-600 leading-relaxed">The homepage contains multiple H1 tags, which goes against SEO best practices and can confuse search engines about the main topic of the page.</p>
+                  <div className="mt-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                    <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                      <svg className="h-5 w-5 text-[#ed1b2e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      Recommended Solution
+                    </h4>
+                    <ul className="space-y-3 text-sm text-gray-600">
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Keep only one H1 tag per page that clearly describes the main topic</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Convert other H1 tags to appropriate heading levels (H2-H6)</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Maintain proper heading hierarchy throughout the page</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -257,26 +280,39 @@ const SEOCaseStudy = () => {
           </div>
 
           {/* Issue 2: Missing Hreflang Tags */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start">
+          <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#ed1b2e]/20 border border-transparent">
+            <div className="p-8">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-[#ed1b2e]">
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-red-100 text-[#ed1b2e] group-hover:bg-[#ed1b2e] group-hover:text-white transition-colors duration-300">
+                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                     </svg>
                   </div>
                 </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">2. Missing Hreflang Tags</h3>
-                  <p className="mt-2 text-gray-600">Despite having both Malay and English versions, the site lacks proper hreflang implementation, which affects international SEO.</p>
-                  <div className="mt-4 bg-gray-50 rounded-md p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Solution:</h4>
-                    <pre className="bg-gray-800 text-white p-3 rounded text-sm overflow-x-auto">
-{`<link rel="alternate" hreflang="en-my" href="https://www.prubsn.com.my/en/" />
-<link rel="alternate" hreflang="ms-my" href="https://www.prubsn.com.my/ms/" />
-<link rel="alternate" hreflang="x-default" href="https://www.prubsn.com.my/" />`}
-                    </pre>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-xl font-bold text-gray-900">Missing Hreflang Tags</h3>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Critical</span>
+                  </div>
+                  <p className="mt-3 text-gray-600 leading-relaxed">Despite having both Malay and English versions, the site lacks proper hreflang implementation, which affects international SEO.</p>
+                  <div className="mt-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                    <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                      <svg className="h-5 w-5 text-[#ed1b2e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      Implementation Example
+                    </h4>
+                    <div className="max-w-full overflow-x-auto">
+                      <pre className="bg-gray-800 text-white p-4 rounded-lg text-sm whitespace-pre-wrap break-all">
+{`<link rel="alternate" hreflang="en-my" 
+      href="https://www.prubsn.com.my/en/" />
+<link rel="alternate" hreflang="ms-my" 
+      href="https://www.prubsn.com.my/ms/" />
+<link rel="alternate" hreflang="x-default" 
+      href="https://www.prubsn.com.my/" />`}
+                      </pre>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -284,27 +320,55 @@ const SEOCaseStudy = () => {
           </div>
 
           {/* Issue 3: Missing Structured Data */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start">
+          <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#ed1b2e]/20 border border-transparent">
+            <div className="p-8">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-[#ed1b2e]">
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-yellow-100 text-yellow-700 group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300">
+                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                     </svg>
                   </div>
                 </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">3. Missing Structured Data</h3>
-                  <p className="mt-2 text-gray-600">The website lacks structured data implementation, missing opportunities for rich snippets in search results.</p>
-                  <div className="mt-4 bg-gray-50 rounded-md p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Recommended Schema Types:</h4>
-                    <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Organization schema</li>
-                      <li>BreadcrumbList schema</li>
-                      <li>FAQPage schema for FAQ sections</li>
-                      <li>Product schema for insurance products</li>
-                    </ul>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-xl font-bold text-gray-900">Missing Structured Data</h3>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Important</span>
+                  </div>
+                  <p className="mt-3 text-gray-600 leading-relaxed">The website lacks structured data implementation, missing opportunities for rich snippets in search results.</p>
+                  <div className="mt-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                    <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                      <svg className="h-5 w-5 text-[#ed1b2e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      Required Schema Types
+                    </h4>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center space-x-2 bg-white p-3 rounded-lg border border-gray-100">
+                        <svg className="h-5 w-5 text-[#ed1b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        <span className="text-sm text-gray-700">Organization</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white p-3 rounded-lg border border-gray-100">
+                        <svg className="h-5 w-5 text-[#ed1b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                        <span className="text-sm text-gray-700">BreadcrumbList</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white p-3 rounded-lg border border-gray-100">
+                        <svg className="h-5 w-5 text-[#ed1b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span className="text-sm text-gray-700">FAQPage</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white p-3 rounded-lg border border-gray-100">
+                        <svg className="h-5 w-5 text-[#ed1b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                        <span className="text-sm text-gray-700">Product</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -312,33 +376,47 @@ const SEOCaseStudy = () => {
           </div>
 
           {/* Issue 4: Social Media Meta Tags */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start">
+          <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#ed1b2e]/20 border border-transparent">
+            <div className="p-8">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-[#ed1b2e]">
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-yellow-100 text-yellow-700 group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300">
+                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                 </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">4. Social Media Meta Tags Issues</h3>
-                  <p className="mt-2 text-gray-600">Mismatched og:url with canonical URL and missing Twitter Card meta tags reduce social sharing effectiveness.</p>
-                  <div className="mt-4 bg-gray-50 rounded-md p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Required Meta Tags:</h4>
-                    <pre className="bg-gray-800 text-white p-3 rounded text-sm overflow-x-auto">
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-xl font-bold text-gray-900">Social Media Meta Tags</h3>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Important</span>
+                  </div>
+                  <p className="mt-3 text-gray-600 leading-relaxed">Mismatched og:url with canonical URL and missing Twitter Card meta tags reduce social sharing effectiveness.</p>
+                  <div className="mt-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                    <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                      <svg className="h-5 w-5 text-[#ed1b2e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      Required Meta Tags
+                    </h4>
+                    <div className="max-w-full overflow-x-auto">
+                      <pre className="bg-gray-800 text-white p-4 rounded-lg text-sm whitespace-pre-wrap break-all">
 {`<!-- Open Graph Tags -->
-<meta property="og:url" content="https://www.prubsn.com.my/ms/" />
-<link rel="canonical" href="https://www.prubsn.com.my/ms/" />
+<meta property="og:url" 
+      content="https://www.prubsn.com.my/ms/" />
+<link rel="canonical" 
+      href="https://www.prubsn.com.my/ms/" />
 
 <!-- Twitter Card Tags -->
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" 
+      content="summary_large_image" />
 <meta name="twitter:site" content="@PruBSN" />
-<meta name="twitter:title" content="PruBSN - Your Insurance Partner" />
+<meta name="twitter:title" 
+      content="PruBSN - Your Insurance Partner" />
 <meta name="twitter:description" content="..." />
 <meta name="twitter:image" content="..." />`}
-                    </pre>
+                      </pre>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -346,27 +424,79 @@ const SEOCaseStudy = () => {
           </div>
 
           {/* Issue 5: Non-Accessible Text in Images */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden col-span-1 lg:col-span-2">
-            <div className="p-6">
-              <div className="flex items-start">
+          <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#ed1b2e]/20 border border-transparent col-span-1 lg:col-span-2">
+            <div className="p-8">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-[#ed1b2e]">
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-red-100 text-[#ed1b2e] group-hover:bg-[#ed1b2e] group-hover:text-white transition-colors duration-300">
+                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
                 </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">5. Non-Accessible Text in Images</h3>
-                  <p className="mt-2 text-gray-600">Important announcements are embedded in images rather than using actual text, affecting both SEO and mobile usability.</p>
-                  <div className="mt-4 bg-gray-50 rounded-md p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Recommendations:</h4>
-                    <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Convert image-based announcements to actual text content</li>
-                      <li>Use responsive typography for better mobile readability</li>
-                      <li>Implement proper HTML markup for announcements</li>
-                      <li>Use images only for supporting visuals, not for text content</li>
-                    </ul>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-xl font-bold text-gray-900">Non-Accessible Text in Images</h3>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Critical</span>
+                  </div>
+                  <p className="mt-3 text-gray-600 leading-relaxed">Important announcements are embedded in images rather than using actual text, affecting both SEO and mobile usability.</p>
+                  <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                      <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                        <svg className="h-5 w-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        Current Issues
+                      </h4>
+                      <ul className="space-y-3 text-sm text-gray-600">
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          <span>Poor accessibility for screen readers</span>
+                        </li>
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          <span>Text not scalable on mobile devices</span>
+                        </li>
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          <span>Content not indexable by search engines</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6">
+                      <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                        <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        Recommended Solutions
+                      </h4>
+                      <ul className="space-y-3 text-sm text-gray-600">
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>Convert image-based announcements to actual text</span>
+                        </li>
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>Use responsive typography for better readability</span>
+                        </li>
+                        <li className="flex items-start">
+                          <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>Implement proper HTML markup for announcements</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
